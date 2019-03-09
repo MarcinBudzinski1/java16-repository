@@ -53,7 +53,7 @@ public class StreamExample {
                 .distinct()
                 .reduce(result, (strings, s) -> {strings.add(s);
                     System.out.println(strings);
-                return strings;}, (strings1, strings2) -> result);
+                return strings;}, (strings1, strings2) -> {strings1.addAll(strings2); return strings1;});
 
     }
 

@@ -6,6 +6,8 @@ public class MyBigDecimalSecret {
 
             private BigDecimal secret2;
 
+    public MyBigDecimalSecret(BigDecimal zero) {
+    }
 
     @Override
     public String toString() {

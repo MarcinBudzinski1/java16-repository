@@ -4,6 +4,9 @@ public class MyStringSecret {
 
     private String secret;
 
+    public MyStringSecret(String hahaha) {
+    }
+
     public String getSecret() {
         return secret;
     }
