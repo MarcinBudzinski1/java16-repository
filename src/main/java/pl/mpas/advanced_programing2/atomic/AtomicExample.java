@@ -11,13 +11,11 @@ public class AtomicExample {
             i.incrementAndGet(); //++i
             i.getAndIncrement(); //i++
 
-            int currentValue =0;
+            int currentValue;
             do {
                 currentValue = i.intValue();
 
             } while ( !i.compareAndSet(currentValue, currentValue + 2));
-
-
         };
     }
 }
